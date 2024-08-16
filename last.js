@@ -1,4 +1,4 @@
-const API_URL = 'https://your-vercel-site.vercel.app/api/getTrack';
+const API_URL = 'https://4nubhav-v-github-io.vercel.app/api/getTrack';
 
 async function fetchCurrentTrack() {
   try {
