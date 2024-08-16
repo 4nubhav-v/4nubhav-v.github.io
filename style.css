@@ -1,0 +1,122 @@
+/* Reset default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  text-align: left;
+  padding: 15px;
+}
+#heading1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#track-name,
+#artist-name,
+/*#album-name,*/
+#copyright {
+  text-align: center;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+  margin: 0;
+  background-image: url("painting.jpg"); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Space between items */
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+}
+
+.lastfm-info {
+  flex: 1;
+  max-width: 250px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.main-content {
+  flex: 2;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#album {
+  text-align: center;
+}
+.lastfm-info,
+.main-content {
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  img {
+    max-width: 250px;
+  }
+}
