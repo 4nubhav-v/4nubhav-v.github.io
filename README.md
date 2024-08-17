@@ -1,4 +1,4 @@
-**This is for my personal website**
+**This is for my personal website [Click here to visit](https://4nubhav-v-github-io.vercel.app/)**
 
 # Anubhav's Personal Website
 
@@ -12,4 +12,4 @@ Welcome to my personal website repository! This website serves as a portfolio, b
 - **Contact Form**: Get in touch with me directly through the website.
 - **Responsive Design**: Optimized for various devices and screen sizes.
 
-This site was built using [GitHub Pages](https://4nubhav-v-github-io.vercel.app/)
+This site was built using GitHub Pages and Vercel.
