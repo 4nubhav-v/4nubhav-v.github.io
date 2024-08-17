@@ -13,4 +13,3 @@ Welcome to my personal website repository! This website serves as a portfolio, b
 - **Responsive Design**: Optimized for various devices and screen sizes.
 
 This site was built using [GitHub Pages](https://4nubhav-v-github-io.vercel.app/)
-View in 
