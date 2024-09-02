@@ -7,7 +7,7 @@ Welcome to my personal website repository! This website serves as a portfolio, b
 
 ## Screenshot
 
-![App Screenshot]()
+![App Screenshot](https://github.com/4nubhav-v/4nubhav-v.github.io/blob/main/screenshot.png)
 
 
 ## Features
