@@ -5,6 +5,11 @@
 Welcome to my personal website repository! This website serves as a portfolio, blog, and contact point. It's built with using HTML, CSS, Javascript and hosted on GitHub Pages.It showcases my projects, skills, and provides a way to get in touch with me. Feel free to explore and get to know more about my work and interests.
 
 
+## Screenshot
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
 ## Features
 
 - **Portfolio**: A collection of my projects and achievements.
