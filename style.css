@@ -23,7 +23,7 @@ p {
   padding: 0;
 }
 body {
-  font-family: LiberationSerif, sans-serif;
+/*  font-family: Liberation, sans-serif; */
   color: #fff;
   background-color: #333;
   padding: 20px;
@@ -33,7 +33,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+@font-face {
+    font-family: "Liberation Font";
+    src: url(fonts/LiberationSerif-Regular.ttf) format("truetype");
+}
 .container {
   display: flex;
   flex-direction: row;
