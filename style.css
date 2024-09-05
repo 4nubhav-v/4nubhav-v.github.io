@@ -43,7 +43,6 @@ body {
   gap: 20px; /* Space between items */
   flex-wrap: wrap; /* Allows wrapping to the next line */
 }
-
 .lastfm-info {
   flex: 1;
   max-width: 250px;
@@ -51,6 +50,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 .main-content {
@@ -60,7 +60,7 @@ body {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-
+  backdrop-filter: blur(4px);
 }
 
 header {
