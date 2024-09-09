@@ -23,12 +23,12 @@ p {
   padding: 0;
 }
 body {
-/*  font-family: Liberation, sans-serif; */
+  font-family: "Liberation Font", sans-serif;
   color: #fff;
   background-color: #333;
   padding: 20px;
   margin: 0;
-  background-image: url("painting.jpg"); /* Path to your image */
+  background-image: url("painting.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,8 +41,8 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  gap: 20px; /* Space between items */
-  flex-wrap: wrap; /* Allows wrapping to the next line */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .lastfm-info {
   flex: 1;
@@ -71,6 +71,8 @@ header {
   text-align: center;
   margin-bottom: 20px;
   border-radius: 8px;
+  backdrop-filter: blur(4px);
+
 }
 
 h1 {
@@ -106,6 +108,7 @@ footer {
   background: rgba(0, 0, 0, 0.9);
   border-radius: 8px;
   margin-top: 20px;
+  backdrop-filter: blur(4px);
 }
 
 #album {
