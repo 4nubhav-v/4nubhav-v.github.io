@@ -1,4 +1,4 @@
-const API_URL = "https://4nubhav.netlify.app/api/getTrack";
+const API_URL = "https://4nubhav.netlify.app/.netlify/functions/getTrack";
 
 async function fetchCurrentTrack() {
   try {
