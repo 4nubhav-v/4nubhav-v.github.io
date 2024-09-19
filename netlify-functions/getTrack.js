@@ -10,19 +10,22 @@ export default async function handler(event, context) {
     const response = await fetch(API_URL);
     const data = await response.json();
 
-    return new Response(JSON.stringify(data), {
-      status: 200,
+    return {
+      statusCode: 200,
+      body: JSON.stringify(data),
       headers: {
         'Content-Type': 'application/json',
       },
-    });
+    };
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Error fetching data' }), {
-      status: 500,
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Error fetching data' }),
       headers: {
         'Content-Type': 'application/json',
       },
-    });
+    };
   }
 }
+
 
