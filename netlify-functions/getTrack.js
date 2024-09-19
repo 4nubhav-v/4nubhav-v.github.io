@@ -1,4 +1,6 @@
 // api/getTrack.js
+import fetch from 'node-fetch'; // Ensure you have this dependency installed
+
 export default async function handler(event, context) {
   const API_KEY = process.env.LASTFM_API_KEY; // Use environment variables
   const USERNAME = process.env.LASTFM_USERNAME;
@@ -8,16 +10,19 @@ export default async function handler(event, context) {
     const response = await fetch(API_URL);
     const data = await response.json();
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify(data),
-    };
+    return new Response(JSON.stringify(data), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
   } catch (error) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: 'Error fetching data' }),
-    };
+    return new Response(JSON.stringify({ error: 'Error fetching data' }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
   }
 }
-
 
