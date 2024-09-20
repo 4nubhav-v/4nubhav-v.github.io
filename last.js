@@ -7,7 +7,6 @@ async function fetchCurrentTrack() {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const data = await response.json();
-    console.log(data); // Log data for debugging
     const track = data.recenttracks.track[0];
 
     if (track && track["@attr"] && track["@attr"].nowplaying) {

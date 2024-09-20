@@ -68,7 +68,6 @@ body {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
 }
 
 header {
@@ -78,7 +77,6 @@ header {
   text-align: center;
   margin-bottom: 20px;
   border-radius: 8px;
-  backdrop-filter: blur(4px);
 }
 
 h1 {
@@ -114,7 +112,6 @@ footer {
   background: rgba(0, 0, 0, 0.9);
   border-radius: 8px;
   margin-top: 20px;
-  backdrop-filter: blur(4px);
 }
 
 #album {
