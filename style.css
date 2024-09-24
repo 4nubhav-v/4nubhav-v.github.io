@@ -10,13 +10,13 @@ p {
   text-align: left;
   padding: 15px;
 }
+
 #heading1 {
   text-align: center;
   padding-bottom: 20px;
 }
 #track-name,
 #artist-name,
-/*#album-name,*/
 #copyright {
   text-align: center;
   padding: 0;
@@ -60,7 +60,6 @@ body {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
 }
 .temp-main {
   padding: 20px;
@@ -122,11 +121,25 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .container {
     flex-direction: column;
   }
   img {
     max-width: 250px;
   }
+  h2,
+p {
+  text-align: center;
+}
+.lt {
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+
 }
