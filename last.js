@@ -37,3 +37,12 @@ fetchCurrentTrack();
 
 // Optionally, refresh every 30 seconds
 setInterval(fetchCurrentTrack, 30000);
+
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX / 2;
+  const y = e.clientY / 2;
+  console.log(x,y)
+
+  // Dynamically set the radial gradient position to follow the cursor
+  document.body.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0), rgba(0,0,0,1))`;
+});
