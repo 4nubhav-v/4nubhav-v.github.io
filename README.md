@@ -1,4 +1,4 @@
-**This is for my personal website [Click here to visit](https://4nubhav-v-github-io.vercel.app/)**
+**This is for my personal website [Click here to visit](https://4nubhav.vercel.app/)**
 
 # Anubhav's Personal Website
 
