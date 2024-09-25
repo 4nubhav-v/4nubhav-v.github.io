@@ -11,6 +11,4 @@ app.get('/api/info', (req, res) => {
     res.json({ phoneNumber, email });
 });
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+module.exports = app;
