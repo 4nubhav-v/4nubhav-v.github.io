@@ -33,9 +33,8 @@ async function fetchCurrentTrack() {
 }
 
 fetch(`https://4nubhav.vercel.app/api/info`)
-  .then((response) => response.json())
+  .then((response) => response.json())  // Parse the JSON data from the response
   .then((data) => {
-    console.log(`Phone: ${data.phoneNumber}, Email: ${data.email}`);
     let st1 = document.getElementById("info1").innerText;
     let st2 = document.getElementById("info2").innerText;
     st1 = `${st1} ${data.email}`;
@@ -44,6 +43,7 @@ fetch(`https://4nubhav.vercel.app/api/info`)
     document.getElementById("info2").innerText = st2;
   })
   .catch((error) => console.error("Error fetching data:", error));
+
 
 
 // Fetch current track information on page load
