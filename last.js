@@ -24,11 +24,7 @@ async function fetchCurrentTrack() {
       document.getElementById("album-cover").src = "";
     }
   } catch (error) {
-    console.error("Error fetching track information:", error);
-    document.getElementById("track-name").textContent =
-      "Error fetching track information.";
-    document.getElementById("artist-name").textContent = "";
-    document.getElementById("album-cover").src = "";
+    document.querySelector(".temp-main").style.display = "none";
   }
 }
 
