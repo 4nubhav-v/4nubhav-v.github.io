@@ -250,23 +250,40 @@ button {
   justify-content: left;
   padding-right: 20px;
 }
-#socials-icons {
+#cv {
+  color: rgb(236, 223, 204);
+  text-decoration: none;
   box-shadow: 0px 0px 20px rgb(236, 223, 204);
   background: rgb(24, 28, 20);
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 20px;
   border: 1px solid white;
   margin-right: 30px;
   padding: 12px;
   transition: 0.4s;
   &:hover {
-    box-shadow: none;
+    color: black;
+    background: white;
   }
 }
-
+#socials-icons {
+  background: rgb(24, 28, 20);
+  border: 1px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  padding: 12px;
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 0px 0px 20px rgb(236, 223, 204);
+  }
+}
 @media (max-width: 850px) {
   .temp-main {
     display: none;

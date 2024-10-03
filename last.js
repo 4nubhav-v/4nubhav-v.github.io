@@ -25,6 +25,7 @@ async function fetchCurrentTrack() {
       //   document.getElementById("album-cover").src = "";
     }
   } catch (error) {
+    document.querySelector(".temp-main").style.display = "none";
     console.log(e);
   }
 }
