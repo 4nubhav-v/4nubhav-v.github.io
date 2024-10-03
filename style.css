@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Liberation Font";
+  src: url(fonts/LiberationSerif-Regular.ttf) format("truetype");
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -6,11 +14,10 @@ p {
   padding: 0;
   box-sizing: border-box;
 }
-p {
+main p {
   text-align: left;
   padding: 15px;
 }
-
 #heading1 {
   text-align: center;
   padding-bottom: 20px;
@@ -23,25 +30,14 @@ p {
 }
 body {
   font-family: "Liberation Font", sans-serif;
-  color: #fff;
-  background-color: #333;
+  color: rgb(236, 223, 204);
+  background: rgb(24, 28, 20);
   padding: 20px;
-  margin: 0;
-  transition: background 0.2s ;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
-@font-face {
-  font-family: "Liberation Font";
-  src: url(fonts/LiberationSerif-Regular.ttf) format("truetype");
-}
+
 .container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 .lastfm-info {
   flex-shrink: 1;
@@ -50,64 +46,60 @@ body {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   /*box-shadow: 0 0px 10px rgba(255, 255, 255, 0.6);*/
-  backdrop-filter: blur(4px);
 }
-
 .main-content {
-  flex: 4;
   max-width: 600px;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(24, 28, 20);
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  gap: 20px;
 }
 .temp-main {
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(60, 61, 55);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 header {
-  background: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  background: rgb(60, 61, 55);
+  color: rgb(236, 223, 204);
   padding: 20px;
   text-align: center;
   margin-bottom: 20px;
   border-radius: 8px;
 }
 
-h1 {
+#headings {
   margin-bottom: 10px;
 }
 
 nav ul {
+  color: rgb(236, 223, 204);
   list-style: none;
   display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+  justify-content: right;
+  padding: 20px;
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 15px;
+  border: 2px transparent white;
 }
 
 nav ul li a {
-  color: #fff;
+  color: rgb(236, 223, 204);
   text-decoration: none;
   padding: 10px;
-}
-
-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+  transition: 0.4s;
+  &:hover {
+    color: white;
+  }
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(60, 61, 55);
   border-radius: 8px;
   margin-top: 20px;
 }
@@ -119,27 +111,171 @@ footer {
 .main-content {
   max-width: 100%;
 }
+.card-heading {
+  padding: 20px;
+}
 
-/* Responsive Design */
+.card-content {
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(60, 61, 55);
+  color: rgb(236, 223, 204);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 0px 40px 40px 40px;
+  width: 350px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    background: rgb(105, 117, 101);
+    box-shadow: 0px 4px 10px rgb(236, 223, 204);
+  }
+}
+button {
+  padding: 10px;
+  margin: 20px;
+  color: rgb(236, 223, 204);
+  background: rgb(24, 28, 20);
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  &:hover {
+    background: rgb(236, 223, 204);
+    color: rgb(105, 117, 101);
+    cursor: pointer;
+  }
+}
+#mountain {
+  width: 140%;
+  height: auto;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+#face-image {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgb(236, 223, 204);
+  transition: 0.4s;
+  border: 10px solid white;
+  &:hover {
+    box-shadow: none;
+  }
+}
+#intro-main {
+  display: flex;
+  align-items: end;
+}
+#hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 18px;
+  padding-left: 20px;
+}
+#hero .temp-main {
+  display: flex;
+}
+#intro {
+  font-family: "Roboto", sans-serif;
+  padding: 25px;
+}
+#hi {
+  font-size: 60px;
+}
+#hi1 {
+  font-size: 15px;
+}
+#hi2 {
+  font-size: 18px;
+  font-family: "Liberation Font", sans-serif;
+  padding: none;
+  margin: none;
+}
+#track-intro {
+  display: flex;
+  justify-content: space-between;
+}
+#about-me {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 20px;
+}
+#about-content {
+  font-size: 18px;
+  text-align: center;
+}
+#skills-point {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+#skill-points1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#skill-points2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-right: 20px;
+}
+#socials-icons {
+  box-shadow: 0px 0px 20px rgb(236, 223, 204);
+  background: rgb(24, 28, 20);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid white;
+  margin-right: 30px;
+  padding: 12px;
+  transition: 0.4s;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 @media (max-width: 850px) {
+  .temp-main {
+    display: none;
+  }
   .container {
     flex-direction: column;
   }
-  img {
+  #album-cover {
     max-width: 250px;
   }
   h2,
-p {
-  text-align: center;
-}
-.lt {
-  background-color: rgba(0, 0, 0, 0.4);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  padding-top: 10px;
-}
-
+  p {
+    text-align: center;
+  }
+  .card-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 400px;
+  }
 }

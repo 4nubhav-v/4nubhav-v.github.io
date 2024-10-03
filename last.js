@@ -33,7 +33,7 @@ async function fetchCurrentTrack() {
 }
 
 fetch(`https://4nubhav.vercel.app/api/info`)
-  .then((response) => response.json())  // Parse the JSON data from the response
+  .then((response) => response.json()) // Parse the JSON data from the response
   .then((data) => {
     let st1 = document.getElementById("info1").innerText;
     let st2 = document.getElementById("info2").innerText;
@@ -44,17 +44,20 @@ fetch(`https://4nubhav.vercel.app/api/info`)
   })
   .catch((error) => console.error("Error fetching data:", error));
 
-
-
 // Fetch current track information on page load
 fetchCurrentTrack();
 
 // Optionally, refresh every 30 seconds
 setInterval(fetchCurrentTrack, 30000);
 
-document.addEventListener("mousemove", (e) => {
-  const x = e.clientX ;
-  const y = e.clientY ;
-  // Dynamically set the radial gradient position to follow the cursor
-  document.body.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0), rgba(0,0,0,1))`;
-});
+// document.addEventListener("mousemove", (e) => {
+//   const x = e.pageX;
+//   const y = e.pageY;
+//   lastX = x;
+//   lastY = y;
+//   isOutOfWindow = false;
+//   // Dynamically set the radial gradient position to follow the cursor
+//   window.requestAnimationFrame(() => {
+//     document.body.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0), rgba(0,0,0,1))`;
+//   });
+// });
