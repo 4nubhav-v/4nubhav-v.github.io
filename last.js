@@ -18,13 +18,14 @@ async function fetchCurrentTrack() {
       ).textContent = `Artist: ${track.artist["#text"]}`;
       document.getElementById("album-cover").src = track.image[3]["#text"];
     } else {
-      document.getElementById("track-name").textContent =
-        "No track is currently playing.";
-      document.getElementById("artist-name").textContent = "";
-      document.getElementById("album-cover").src = "";
+      document.querySelector(".temp-main").style.display = "none";
+      //   document.getElementById("track-name").textContent =
+      //     "No track is currently playing.";
+      //   document.getElementById("artist-name").textContent = "";
+      //   document.getElementById("album-cover").src = "";
     }
   } catch (error) {
-    document.querySelector(".temp-main").style.display = "none";
+    console.log(e);
   }
 }
 
