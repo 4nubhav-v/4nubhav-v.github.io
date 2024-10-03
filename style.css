@@ -120,6 +120,9 @@ footer {
     box-shadow: none;
   }
 }
+#song-info {
+  padding: 4px;
+}
 
 .card-content {
   /* box-sizing: border-box; */
