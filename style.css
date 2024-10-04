@@ -90,6 +90,7 @@ nav ul li a {
   transition: 0.4s;
   &:hover {
     color: white;
+    text-shadow: 0px 0px 4px white;
   }
 }
 
@@ -185,8 +186,12 @@ button {
     box-shadow: none;
   }
 }
+#skills {
+  padding: 300px;
+}
 #intro-main {
   display: flex;
+
   align-items: end;
 }
 #hero {
@@ -205,6 +210,9 @@ button {
 }
 #hi {
   font-size: 60px;
+  transition: 0.4s;
+  &:hover {
+  }
 }
 #hi1 {
   font-size: 15px;
@@ -227,22 +235,39 @@ button {
 }
 #about-content {
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 #skills-point {
   display: flex;
+  margin: 20px;
   justify-content: center;
   font-size: 18px;
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px white;
+  transition: 0.4s;
+  &:hover {
+    box-shadow: none;
+  }
 }
-#skill-points1 {
+#skill-points1,
+#skill-points2,
+#skill-points3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 60px;
+  list-style-type: "▹";
 }
-#skill-points2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#skill-points1 li,
+#skill-points2 li,
+#skill-points3 li {
+  padding: 20px;
+  font-size: 20px;
+  transition: 0.4s;
+  &:hover {
+    text-shadow: 0px 0px 2px white;
+  }
 }
 #socials {
   display: flex;
