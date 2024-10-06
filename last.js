@@ -1,5 +1,5 @@
-const API_URL = "https://4nubhav.vercel.app/api/getTrack";
-
+// const API_URL = "https://4nubhav.vercel.app/api/getTrack";
+const API_URL = "http://localhost:3000/track";
 async function fetchCurrentTrack() {
   try {
     const response = await fetch(API_URL);
@@ -26,7 +26,7 @@ async function fetchCurrentTrack() {
     }
   } catch (error) {
     document.querySelector(".temp-main").style.display = "none";
-    console.log(e);
+    console.log(error);
   }
 }
 
