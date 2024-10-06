@@ -1,5 +1,5 @@
-// const API_URL = "https://4nubhav.vercel.app/api/getTrack";
-const API_URL = "http://localhost:3000/track";
+const API_URL = "https://4nubhav.vercel.app/api/getTrack";
+// const API_URL = "http://localhost:3000/track";
 async function fetchCurrentTrack() {
   try {
     const response = await fetch(API_URL);
@@ -19,10 +19,6 @@ async function fetchCurrentTrack() {
       document.getElementById("album-cover").src = track.image[3]["#text"];
     } else {
       document.querySelector(".temp-main").style.display = "none";
-      //   document.getElementById("track-name").textContent =
-      //     "No track is currently playing.";
-      //   document.getElementById("artist-name").textContent = "";
-      //   document.getElementById("album-cover").src = "";
     }
   } catch (error) {
     document.querySelector(".temp-main").style.display = "none";
@@ -47,15 +43,3 @@ fetchCurrentTrack();
 
 // Optionally, refresh every 30 seconds
 setInterval(fetchCurrentTrack, 30000);
-
-// document.addEventListener("mousemove", (e) => {
-//   const x = e.pageX;
-//   const y = e.pageY;
-//   lastX = x;
-//   lastY = y;
-//   isOutOfWindow = false;
-//   // Dynamically set the radial gradient position to follow the cursor
-//   window.requestAnimationFrame(() => {
-//     document.body.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0), rgba(0,0,0,1))`;
-//   });
-// });
