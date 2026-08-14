@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro'
+
+const identity = {
+  firstName: "Sarah",
+  country: "Canada",
+  occupation: "Technical Writer",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
+const skillColor = "red";
+const position = "center"
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<Navigation/>
+  <h1>About Me</h1>
+  <ul>
+    {skills.map((x) => <li class="skills-color">{x}</li>)}
+  </ul>
+  <h2>... and my new Astro site!</h2>
+
+  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+
+  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>	
+</body>
+<style define:vars={{skillColor, position}}>
+.skills-color {
+    color: var(--skillColor);
+    text-align: var(--position);
+
+}
+</style>
+</html>
