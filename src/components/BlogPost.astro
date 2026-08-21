@@ -1,0 +1,5 @@
+---
+const { title, url, date } = Astro.props;
+---
+
+<li class="flex justify-between"><a href={url} class="flex justify-between">{title}</a> <p><i>{date}</i></p></li>

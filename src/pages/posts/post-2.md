@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownLayoutPost.astro
-title: My first blog
+title: My second blog
 author: Anubhav
-date: 15 Aug 2026
+date: 22 Aug 2026
 ---
 
 Hello World
