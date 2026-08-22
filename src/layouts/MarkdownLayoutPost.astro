@@ -1,11 +1,13 @@
 ---
 const { frontmatter } = Astro.props;
 import '../styles/global.css'
+import NavigationAstroComponent from '../components/Navigation.astro';
 ---
 
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8" />
+<NavigationAstroComponent />
 <h1>{frontmatter.title}</h1>
 <p>Written by {frontmatter.author}</p>
 <slot />
