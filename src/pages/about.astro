@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro'
-
+import LayoutAstroComponent from '../layouts/BaseLayout.astro'
 const identity = {
   firstName: "Sarah",
   country: "Canada",
@@ -12,24 +11,12 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
 const skillColor = "red";
 const position = "center"
+const pageTitle = "About Me"
 ---
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-<Navigation/>
-  <h1>About Me</h1>
-  <p>I am a self learned Frontend developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the technology & history literature.</p>
 
-</body>
-<style define:vars={{skillColor, position}}>
-.skills-color {
-    color: var(--skillColor);
-    text-align: var(--position);
+<LayoutAstroComponent pageTitle={pageTitle}>
+  <h1>{pageTitle}</h1>
 
-}
-</style>
-</html>
+  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+  <p class="mb-4">This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>	
+</LayoutAstroComponent>

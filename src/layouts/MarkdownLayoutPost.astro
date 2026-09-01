@@ -1,14 +1,25 @@
 ---
-const { frontmatter } = Astro.props;
 import '../styles/global.css'
 import NavigationAstroComponent from '../components/Navigation.astro';
+import FooterAstroComponent from '../components/Footer.astro';
+const { frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8" />
-<NavigationAstroComponent />
-<h1>{frontmatter.title}</h1>
-<p class="mb-4 text-neutral-500"><i>Written by {frontmatter.author}</i></p>
-<slot />
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
+		<NavigationAstroComponent />
+        <h1>{frontmatter.title}</h1>
+        <p class="mb-4 text-neutral-500"><i>Written by {frontmatter.author}</i></p>
+		<slot/>
+        <FooterAstroComponent/>
+	</body>
 </html>

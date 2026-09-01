@@ -1,10 +1,11 @@
 ---
 import '../styles/global.css'
 import NavigationAstroComponent from '../components/Navigation.astro'
-const {pageTitle } = Astro.props
+import FooterAstroComponent from '../components/Footer.astro'
+const { pageTitle } = Astro.props
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark:selection:bg-gruvbox-dark-orange-bright dark:selection:text-gruvbox-dark-bg0 selection:bg-gruvbox-light-orange-bright selection:text-gruvbox-light-bg0">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -16,5 +17,6 @@ const {pageTitle } = Astro.props
 	<body>
 		<NavigationAstroComponent />
 		<slot/>
+		<FooterAstroComponent/>
 	</body>
 </html>
