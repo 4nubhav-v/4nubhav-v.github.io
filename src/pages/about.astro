@@ -1,6 +1,6 @@
 ---
-import '../styles/global.css';
-import LayoutAstroComponent from '../layouts/BaseLayout.astro'
+import "../styles/global.css";
+import LayoutAstroComponent from "../layouts/BaseLayout.astro";
 const identity = {
   firstName: "Sarah",
   country: "Canada",
@@ -8,15 +8,21 @@ const identity = {
   hobbies: ["photography", "birdwatching", "baseball"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const skillColor = "red";
-const position = "center"
-const pageTitle = "About Me"
+const position = "center";
+const pageTitle = "About Me";
 ---
 
 <LayoutAstroComponent pageTitle={pageTitle}>
   <h1>{pageTitle}</h1>
 
-  <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
-  <p class="mb-4">This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>	
+  <p>
+    I am working through Astro's introductory tutorial. This is the second page
+    on my website, and it's the first one I built myself!
+  </p>
+  <p class="mb-4">
+    This site will update as I complete more of the tutorial, so keep checking
+    back and see how my journey is going!
+  </p>
 </LayoutAstroComponent>

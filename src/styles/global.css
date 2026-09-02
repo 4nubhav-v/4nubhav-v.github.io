@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 @import "tailwindcss";
 
 /* Re-enable class-based dark mode (v4 defaults to media-query strategy) */
@@ -68,7 +68,7 @@
   --color-gruvbox-light-orange-bright: #af3a03;
 
   /* --- Semantic tokens: swap automatically with the .dark class --- */
-  --color-bg: var(--color-gruvbox-light-bg0);
+  --color-bg: var(--color-gruvbox-light-bg1);
   --color-fg: var(--color-gruvbox-light-fg1);
   --color-surface: var(--color-gruvbox-light-bg1);
 }
@@ -77,12 +77,12 @@ html {
   background-color: var(--color-bg);
   color: var(--color-fg);
   font-family:
-    Noto Serif,
-    Georgia,
-    Cambria,
+    Cormorant Garamond,
     "Times New Roman",
     Times,
     serif;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 body {
