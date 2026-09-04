@@ -1,10 +1,23 @@
 ---
 import ThemeIcon from "../components/ThemeIcon.astro";
+import RssIcon from "../components/RssIcon.astro";
 ---
 
 <div id="main-menu" class="flex justify-between">
-  <nav class="gap-x-2 flex nav-links">
-    <a href="/">Home</a><a href="/about">About</a><a href="/blogs">Blogs</a>
+  <nav class="nav-links">
+    <ul class="flex gap-x-2">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blogs">Blogs</a></li>
+      <li>
+        <a href="/resume">Resume</a>
+      </li>
+    </ul>
   </nav>
-  <ThemeIcon />
+  <div class="flex justify-end gap-x-2">
+    <RssIcon />
+    <ThemeIcon />
+  </div>
 </div>

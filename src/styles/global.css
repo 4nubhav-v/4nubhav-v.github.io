@@ -105,12 +105,12 @@ h1 {
 
 /* nav styles */
 
-.nav-links a {
+.nav-links li a {
   color: var(--color-gruvbox-dark-bg0);
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
+.nav-links li a:hover,
+.nav-links li a:focus {
   color: var(--color-gruvbox-dark-green);
 }
 
@@ -125,8 +125,8 @@ html.dark {
   color: var(--color-gruvbox-dark-bg0);
 }
 
-.dark .nav-links a:hover,
-.dark .nav-links a:focus {
+.dark .nav-links li a:hover,
+.dark .nav-links li a:focus {
   color: var(--color-gruvbox-dark-orange);
 }
 .dark .footer-links a:hover,
@@ -141,7 +141,7 @@ html.dark {
   color: var(--color-gruvbox-dark-green);
 }
 
-.dark .nav-links a {
+.dark .nav-links li a {
   color: var(--color-gruvbox-dark-green);
 }
 
